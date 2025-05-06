@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>888STRZ AVIATOR PRO SIGNAL BYTEX LANKA</title>
+    <style>
+        body {
+            background: url('https://www.dropbox.com/scl/fi/rnznpidz63uqjc58q96a5/image.jpg?rlkey=acieaabbitscbjm6e4tonlpe3&st=vkj5sqm7&raw=1') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        @keyframes colorGlow {
+            0% { color: #ff0000; text-shadow: 0px 0px 10px #ff0000; }
+            20% { color: #ff8c00; text-shadow: 0px 0px 10px #ff8c00; }
+            40% { color: #00ff00; text-shadow: 0px 0px 10px #00ff00; }
+            60% { color: #0000ff; text-shadow: 0px 0px 10px #0000ff; }
+            80% { color: #8a2be2; text-shadow: 0px 0px 10px #8a2be2; }
+            100% { color: #ff0000; text-shadow: 0px 0px 10px #ff0000; }
+        }
+
+        .title {
+            font-size: 2.5em;
+            font-weight: bold;
+            display: inline-block;
+            border: 5px solid white;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px 40px;
+            animation: colorGlow 10s infinite linear;
+            margin-top: 30px;
+        }
+
+        .time-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            display: inline-block;
+            border-radius: 15px;
+            margin: 20px;
+            font-size: 1.5em;
+            border: 3px solid white;
+            box-shadow: 0 0 15px white;
+        }
+
+        .next-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .next-label {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: rgba(0, 0, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: #00BFFF;
+            text-shadow: 0px 0px 10px rgba(0, 0, 255, 0.8);
+            border: 2px solid #00BFFF;
+            animation: colorGlow 2s infinite linear;
+        }
+
+        .next-time-box {
+            display: inline-block;
+            padding: 30px;
+            font-size: 2em;
+            font-weight: bold;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 25px;
+            position: relative;
+            border: 6px solid #fff;
+            animation: rainbowGlow 4s infinite linear;
+        }
+
+        @keyframes rainbowGlow {
+            0% { border-color: red; box-shadow: 0 0 25px red; }
+            10% { border-color: orange; box-shadow: 0 0 25px orange; }
+            20% { border-color: yellow; box-shadow: 0 0 25px yellow; }
+            30% { border-color: green; box-shadow: 0 0 25px green; }
+            40% { border-color: cyan; box-shadow: 0 0 25px cyan; }
+            50% { border-color: blue; box-shadow: 0 0 25px blue; }
+            60% { border-color: violet; box-shadow: 0 0 25px violet; }
+            70% { border-color: deeppink; box-shadow: 0 0 25px deeppink; }
+            80% { border-color: lime; box-shadow: 0 0 25px lime; }
+            90% { border-color: gold; box-shadow: 0 0 25px gold; }
+            100% { border-color: red; box-shadow: 0 0 25px red; }
+        }
+
+        .whatsapp-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 25px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ffcc00;
+            border-radius: 15px;
+            margin-top: 30px;
+            display: inline-block;
+            border: 3px solid #ffcc00;
+            box-shadow: 0 0 15px #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">888STRZ AVIATOR PRO SIGNAL BYTEX LANKA</h1>
+
+    <div class="time-box">
+        <p>දැනට සජීවී කාලය: <span id="liveTime"></span></p>
+    </div>
+
+    <div class="next-container">
+        <div class="next-label">NEXT AVIATOR 7 ODD TIME</div>
+        <div class="next-time-box">
+            <p id="nextTime">ඊළඟ කාලය: ගණනය කරමින්...</p>
+        </div>
+    </div>
+
+    <div class="whatsapp-box">
+        BYTEX WHATSAPP OWNER +94 76 732 4225
+    </div>
+
+    <script>
+        function updateLiveTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            document.getElementById("liveTime").textContent = `${hours}:${minutes}:${seconds}`;
+
+            const minutePairs = [
+                ["02", "03"], ["05", "06"], ["07", "08"], ["16", "17"],
+                ["23", "24"], ["30", "31"], ["39", "40"], ["48", "49"],
+                ["54", "55"], ["57", "58"]
+            ];
+
+            let nextTime = null;
+            for (let i = 0; i < minutePairs.length; i++) {
+                if (minutes < minutePairs[i][0]) {
+                    nextTime = `${hours}:${minutePairs[i][0]} / ${hours}:${minutePairs[i][1]}`;
+                    break;
+                }
+            }
+
+            if (!nextTime) {
+                const nextHour = String((parseInt(hours) + 1) % 24).padStart(2, '0');
+                nextTime = `${nextHour}:${minutePairs[0][0]} / ${nextHour}:${minutePairs[0][1]}`;
+            }
+
+            document.getElementById("nextTime").textContent = `ඊළඟ කාලය: ${nextTime}`;
+        }
+
+        setInterval(updateLiveTime, 1000);
+        updateLiveTime();
+    </script>
+</body>
+</html>
